@@ -26,7 +26,7 @@ Aby odtworzyć go w środowisku, w którym został stworzony należy ściagnąć
     
     
 **SZCZEGÓŁOWY OPIS PROJEKTU**
-* *Klasa School*  
+* **Klasa School**  
 Jest to klasa wykonawcza projektu. Tutaj definiujemy pracownika biurowego oraz nauczycieli. W tej klasie pracownik biurowy
 tworzy plan lekcji dla danej klasy uczniów (patrz CourseGenerator). Tutaj wykonujemy dany dzień zajęć (dla wszystkich
 zdefiniowanych przez nas wcześniej klas) oraz definiujemy jak wygląda transfer więdzy pomiędzy 
@@ -34,7 +34,7 @@ nauczycielem a uczniem (który wykorzystujemy w executeDay)
 1. atrybuty: officeWorker, teachers
 2. metody: exeuteDay, knowledgeTransfer (patrz wymiana wiedzy)
 
-* *Person*  
+* **Person**  
 Jest to klasa bazowa dla wszystkich innych uzytkowników reprezentujących człowieka. Każdy z osób posiada
 specyficzne umiejętności reprezentowane przez strukturę ([enuma](https://www.w3schools.com/java/java_enums.asp))
 Skill. 
