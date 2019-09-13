@@ -1,0 +1,267 @@
+<Project>
+  <Name>TestPoz04</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>CSharp</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Person</Name>
+        <Access>Public</Access>
+        <Location left="629" top="130" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String imie</Member>
+        <Member type="Field">String nazwisko</Member>
+        <Member type="Field">Date dataUrodzenia</Member>
+        <Member type="Field">HashMap&lt;Skil, Integerl&gt; skills</Member>
+        <Member type="Method">public int getAge()</Member>
+        <Member type="Method">public void presentYourdelfd()</Member>
+        <Member type="Method">private Skill getSkills()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Structure">
+        <Name>Skill</Name>
+        <Access>Public</Access>
+        <Location left="930" top="111" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Skill Math</Member>
+        <Member type="Field">Skill English</Member>
+        <Member type="Field">Skill Polish</Member>
+        <Member type="Field">Skill Biologist</Member>
+        <Member type="Field">Skill Physics</Member>
+        <Member type="Field">Skill History</Member>
+        <Member type="Field">skill MicrosoftOffice</Member>
+        <Member type="Field">Skill Organization</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>Student</Name>
+        <Access>Public</Access>
+        <Location left="1217" top="375" />
+        <Size width="162" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Course course</Member>
+        <Member type="Field">List&lt;Skill&gt; preferences</Member>
+        <Member type="Field">float obedience</Member>
+        <Member type="Field">String CV</Member>
+        <Member type="Method">public void downloadCv()</Member>
+        <Member type="Method">private Skill gainSkill()</Member>
+        <Member type="Method">public void learn(Skill skill)</Member>
+        <Member type="Method">public void missClass()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Teacher</Name>
+        <Access>Public</Access>
+        <Location left="1011" top="712" />
+        <Size width="289" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">float engagement</Member>
+        <Member type="Field">int vacationLeft = 26</Member>
+        <Member type="Method">public int shareSkill(Skill skill)</Member>
+        <Member type="Method">public void takeVacation()</Member>
+        <Member type="Method">public HashMap&lt;String, int&gt; rateClass(Course course)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>OfficeWorker</Name>
+        <Access>Public</Access>
+        <Location left="540" top="541" />
+        <Size width="261" height="230" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">public void scheduleDay(CourseType course)</Member>
+        <Member type="Method">public Boolean demandRating(Course course)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Structure">
+        <Name>CourseType</Name>
+        <Access>Public</Access>
+        <Location left="23" top="43" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String A</Member>
+        <Member type="Field">String B</Member>
+      </Entity>
+      <Entity type="Class">
+        <Name>CourseGenerator</Name>
+        <Access>Public</Access>
+        <Location left="321" top="162" />
+        <Size width="287" height="196" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">List&lt;Student&gt; students</Member>
+        <Member type="Field">CourseType course</Member>
+        <Member type="Field">CourseSchedule schedule</Member>
+        <Member type="Method">public void generateCourseStudents(int studentsNumber)</Member>
+        <Member type="Method">public List&lt;Student&gt; getCourseStudents()</Member>
+        <Member type="Method">public void setCourseClasses()</Member>
+        <Member type="Method">public void setDaySchedule()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>School</Name>
+        <Access>Public</Access>
+        <Location left="199" top="727" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">OfficeWorker Krysia</Member>
+        <Member type="Field">List&lt;CourseGenerator&gt; courses</Member>
+        <Member type="Method">public void executeDay()</Member>
+        <Member type="Method">public void knowledgeTransfer(Teacher teacher, Student student)</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>MatchTeacher</Name>
+        <Access>Public</Access>
+        <Location left="540" top="1199" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PolishTeacher</Name>
+        <Access>Public</Access>
+        <Location left="734" top="1199" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>EnglishTeacher</Name>
+        <Access>Public</Access>
+        <Location left="939" top="1199" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PhysicsTeacher</Name>
+        <Access>Public</Access>
+        <Location left="1132" top="1199" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>HistoryTeacher</Name>
+        <Access>Public</Access>
+        <Location left="1331" top="1199" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>CourseSchedule</Name>
+        <Access>Public</Access>
+        <Location left="23" top="302" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">Map&lt;String, Map&lt;Integer, Skill&gt;&gt; daySchedule</Member>
+        <Member type="Method">public Map&lt;String, Map&lt;Integer, Skill&gt;&gt; getDayClasses()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>PETeacher</Name>
+        <Access>Public</Access>
+        <Location left="1534" top="1199" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="0" second="1">
+        <Label>uses</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="5">
+        <Label>uses</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="3" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>842</X>
+          <Y>603</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="4" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>756</X>
+          <Y>50</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Association" first="7" second="6">
+        <Label>uses</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="6" second="13">
+        <Label>uses</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Generalization" first="8" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="9" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="10" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="11" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="12" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="14" second="3">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="7" second="4">
+        <Label>uses</Label>
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="4" second="3">
+        <Label>uses</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+      <Relationship type="Association" first="4" second="2">
+        <Label>uses</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>
