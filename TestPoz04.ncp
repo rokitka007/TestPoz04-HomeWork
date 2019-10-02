@@ -1,13 +1,13 @@
 <Project>
   <Name>TestPoz04</Name>
   <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
-    <Name>Untitled</Name>
+    <Name>School</Name>
     <Language>CSharp</Language>
     <Entities>
       <Entity type="Class">
         <Name>Person</Name>
         <Access>Public</Access>
-        <Location left="629" top="130" />
+        <Location left="660" top="150" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
         <Member type="Field">String imie</Member>
@@ -151,8 +151,8 @@
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <BendPoint relativeToStartShape="False">
-          <X>842</X>
-          <Y>603</Y>
+          <X>873</X>
+          <Y>623</Y>
         </BendPoint>
       </Relationship>
       <Relationship type="Generalization" first="4" second="0">
@@ -163,8 +163,8 @@
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Vertical</EndOrientation>
         <BendPoint relativeToStartShape="False">
-          <X>756</X>
-          <Y>50</Y>
+          <X>787</X>
+          <Y>70</Y>
         </BendPoint>
       </Relationship>
       <Relationship type="Association" first="7" second="6">
@@ -203,8 +203,6 @@
         <AssociationType>Composition</AssociationType>
       </Relationship>
       <Relationship type="Association" first="7" second="9">
-        <Label>
-        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <BendPoint relativeToStartShape="True">
@@ -220,6 +218,103 @@
         <EndOrientation>Horizontal</EndOrientation>
         <Direction>Unidirectional</Direction>
         <AssociationType>Composition</AssociationType>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>People</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Person</Name>
+        <Access>Public</Access>
+        <Location left="548" top="169" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String imie</Member>
+        <Member type="Field">String nazwisko</Member>
+        <Member type="Field">datetime dataUrodzenia</Member>
+        <Member type="Method">int getAge()</Member>
+        <Member type="Method">String presentYourself()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Student</Name>
+        <Access>Public</Access>
+        <Location left="842" top="501" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">String CV</Member>
+        <Member type="Field">float obedience</Member>
+        <Member type="Method">void downloadCV()</Member>
+        <Member type="Method">void presentCV()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Teacher</Name>
+        <Access>Public</Access>
+        <Location left="530" top="501" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">int vacationDays</Member>
+        <Member type="Field">float engagement</Member>
+        <Member type="Method">void takeVacation(int days)</Member>
+        <Member type="Method">int checkVacationLeft()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>OfficeWorker</Name>
+        <Access>Public</Access>
+        <Location left="264" top="501" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Comment">
+        <Text>- takeVacation - zmniejsza ilosc dni o wybrana ilosc (w przypadku gdy ilosc wybieranych dni jest za duzo wyrzuca wyjatek)
+- checkVacationLeft - wyswietla na konsoli imie i nazwisko nauczyciela oraz ilosc pozostalych dni urlopu do wykorzystania
+</Text>
+        <Location left="530" top="744" />
+        <Size width="210" height="142" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>- CV - String reprezentujacy informacje o zyciorysie Studenta
+- download CV - zapisuje Cv do pliku o nazwie ImieNazwisko_CV.txt
+- presentCV - wyswietla na konsole CV studenta</Text>
+        <Location left="834" top="741" />
+        <Size width="194" height="145" />
+      </Entity>
+      <Entity type="Comment">
+        <Text>- getAge() - wylicza wiek osoby na podstawie jej daty urodzenia (odejmuje od aktualnego roku rok urodzenia osoby)
+- presentYouself - wyswietla imie i nazwisko osoby oraz jej wiek</Text>
+        <Location left="548" top="33" />
+        <Size width="182" height="106" />
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Generalization" first="3" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="False">
+          <X>620</X>
+          <Y>411</Y>
+        </BendPoint>
+      </Relationship>
+      <Relationship type="Generalization" first="2" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+      </Relationship>
+      <Relationship type="Generalization" first="1" second="0">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Vertical</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>916</X>
+          <Y>476</Y>
+        </BendPoint>
+        <BendPoint relativeToStartShape="False">
+          <X>620</X>
+          <Y>410</Y>
+        </BendPoint>
       </Relationship>
     </Relationships>
   </ProjectItem>
