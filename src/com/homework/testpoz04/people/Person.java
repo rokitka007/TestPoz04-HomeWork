@@ -1,7 +1,9 @@
 package com.homework.testpoz04.people;
 
 import java.time.Year;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.TimeZone;
 
 public class Person {
 
@@ -20,8 +22,11 @@ public class Person {
     }
 
     public Integer getAge() {
-        Integer now = Year.now().getValue();
-        return new Integer(21);
+        Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("Europe/Warsaw"));
+        cal.setTime(this.dateOfBirth);
+        Integer yearOfBirth = cal.get(Calendar.YEAR);
+        Integer thisYear = Year.now().getValue();
+        return thisYear - yearOfBirth;
     }
 
     public String getName() {
